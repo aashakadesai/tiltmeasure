@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:translationY="50dp">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="46dp"
+        android:layout_toLeftOf="@+id/xtilt"
+        android:text="X-Axis Rotation"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:translationX="30dp"
+        android:translationY="110dp" />
+
+    <TextView
+        android:id="@+id/xtilt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ytilt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:text="X Tilt"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:translationX="40dp"
+        android:translationY="-30dp" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="46dp"
+        android:layout_toLeftOf="@+id/ytilt"
+        android:text="Y-Axis Rotation"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:translationX="30dp"
+        android:translationY="250dp" />
+
+    <TextView
+        android:id="@+id/ytilt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:text="Y Tilt"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:translationX="40dp"
+        android:translationY="-30dp" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="46dp"
+        android:layout_toLeftOf="@+id/ztilt"
+        android:text="Z-Axis Rotation"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:translationX="30dp"
+        android:translationY="390dp" />
+
+    <TextView
+        android:id="@+id/ztilt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ytilt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:text="Z Tilt"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:translationX="40dp"
+        android:translationY="-30dp" />
+
+    <Button
+        android:id="@+id/accelero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Enable Accelerometer" />
+
+    <Button
+        android:id="@+id/gyrosco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accelero"
+        android:layout_centerHorizontal="true"
+        android:text="Enable Gyroscope"
+        android:translationY="10dp" />
+
+    <Button
+        android:id="@+id/bias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ytilt"
+        android:layout_centerHorizontal="true"
+        android:text="Estimate Bias"
+        android:translationY="120dp" />
+
+
+</RelativeLayout>
